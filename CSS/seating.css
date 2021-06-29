@@ -1,0 +1,296 @@
+body {
+  background-color: #ebeeef;
+}
+a {
+	color: #b71a4c;
+}
+.front-indicator {
+	width: 400px;
+	margin: 5px 32px 15px 0px;
+	background-color: grey;	
+	color: white;
+	text-align: center;
+	padding: 3px;
+	border-radius: 5px;
+	
+}
+.wrapper {
+	width: 100%;
+	text-align: center;
+ 	margin-top:150px;
+}
+.container {
+	margin: 0 auto;
+	width: 500px;
+	text-align: left;
+}
+.booking-details {
+	float: left;
+	text-align: left;
+	margin-left: 35px;
+	font-size: 12px;
+	position: relative;
+	height: 401px;
+}
+.booking-details h2 {
+	margin: 25px 0 20px 0;
+	font-size: 17px;
+}
+.booking-details h3 {
+	margin: 5px 5px 0 0;
+	font-size: 14px;
+}
+div.seatCharts-cell {
+	color: #182C4E;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	
+}
+div.seatCharts-seat {
+	color: #FFFFFF;
+	cursor: pointer;	
+}
+div.seatCharts-row {
+	height: 35px;
+}
+div.seatCharts-seat.available {
+	background-color: #B9DEA0;
+
+}
+div.seatCharts-seat.available.first-class {
+/* 	background: url(vip.png); */
+	background-color: #6c7ae0;
+}
+div.seatCharts-seat.focused {
+	background-color: #76B474;
+}
+div.seatCharts-seat.selected {
+	background-color: #E6CAC4;
+}
+div.seatCharts-seat.unavailable {
+	background-color: #472B34;
+}
+div.seatCharts-container {
+	width: 200px;
+	padding: 20px 27px 20px 27px;
+	/*padding-left: 27px;*/
+	float: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.seatCharts-legend {
+	color: black;
+	padding-left: 0px;
+	position: relative;
+}
+ul.seatCharts-legendList {
+	width: 600px;
+	padding-left: 90px;
+	display: inline;
+}
+span.seatCharts-legendDescription {
+	margin-left: 5px;
+	line-height: 30px;
+}
+/*.checkout-button {
+	display: block;
+	margin: 10px 0;
+	font-size: 14px;
+}*/
+#selected-seats {
+	max-height: 300px;
+	overflow-y: scroll;
+	overflow-x: none;
+	width: 300px;
+}
+
+div.seatCharts-container {
+	width: 450px;
+	/*min-width: 700px;*/
+}
+div.seatCharts-cell {
+
+	height: 60px;
+	width: 60px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	margin: 3px;
+	float: left;
+	text-align: center;
+	outline: none;
+	font-size: 17px;
+	text-align: center;
+	line-height:16px;
+	color: blue;
+
+}
+div.seatCharts-seat {
+	background-color: green;
+	color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+div.seatCharts-seat:focus {
+	border: none;
+}
+/*
+.seatCharts-seat:focus {
+	outline: none;
+}
+*/
+
+div.seatCharts-space {
+	background-color: white;
+}
+div.seatCharts-row {
+	height: 50px;
+}
+
+div.seatCharts-row:after {
+	clear: both;
+}
+
+div.seatCharts-seat.selected {
+	background-color: aqua;
+}
+
+div.seatCharts-seat.focused {
+	background-color: #6db131;
+}
+
+div.seatCharts-seat.available {
+	background-color: grey;
+}
+
+div.seatCharts-seat.unavailable {
+	background-color: red;
+	cursor: not-allowed;
+}
+
+ul.seatCharts-legendList {
+	list-style: none;
+	display: inline-block;
+}
+li.seatCharts-legendItem {
+	margin-top: 10px;
+	line-height: 2;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../librabies/fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../librabies/fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../librabies/fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../librabies/fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+}
+
+/*---------------------------------------------*/
+a {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+  color: #57b846;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  background-color: #6c7ae0;
+  border-radius: 25px;
+
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+  background-color: grey;
+}

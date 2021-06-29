@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+	  
+   
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/daterangepicker/daterangepicker.css">
+
+	<link rel="stylesheet" type="text/css" href="../CSS/ticket.css">
+
+	<link rel="icon" type="image/png" href="../Images/icon.png"/>
+	<title>Wanderer.com</title>
+
+<!-- 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+
+</head>
+
+
+<body>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(../Images/bus.jpg);">
+					<span class="login100-form-title-1">
+						Purchase Ticket
+					</span>
+				</div>
+            
+            <form class="login100-form validate-form" action="TicketSelection.html"> 
+
+            <!-- Departure text	 -->
+            <div style="border: 0px; top: 10%;" class="wrap-input100 validate-input m-b-26" data-validate="Please Select Departure">
+				<span style="font-size: 20px;" class="label-input100">Departure</span>
+				<select class="select100 custom-select d-block w-100" id="departure" required>
+                    <option value="">Choose...</option>
+                    <option>Peshawar</option>
+                    <option>Lahore</option>
+                    <option>Islamabad</option>
+                    <option>Karachi</option>
+                    <option>Quetta</option>
+                </select>
+				<span class="focus-input100"></span>
+			</div> 
+
+			
+            <!-- Arrival text -->
+            <div style="border: 0px; top: 3%;" class="wrap-input100 validate-input m-b-26" data-validate="Please Select Arrival">
+				<span style="font-size: 20px;" class="label-input100">Arrival</span>	
+				<select class="select100 custom-select d-block w-100" id="arrival" required>
+                    <option value="">Choose...</option>
+                    <option>Peshawar</option>
+                    <option>Lahore</option>
+                    <option>Islamabad</option>
+                    <option>Karachi</option>
+                    <option>Quetta</option>
+                </select>			
+				<span class="focus-input100"></span>
+			</div>			
+
+			<!-- Date Picker	 -->
+			<div style="border: 1px; top: 2%;" class="wrap-input100 validate-input m-b-26" data-validate="Please Select Date">
+				<span style="font-size: 20px;" class="label-input100">Date</span>
+				<script>
+				  $( function() {
+				    $( "#datepicker" ).datepicker();
+				  } );
+				</script>
+				<input style="position: relative; border-bottom: 1px solid grey; left: 18px; top: 10px;" type="text" id="datepicker">
+				<span class="focus-input100"></span>
+			</div> 
+			
+			<!-- Submit button -->
+        	<div style="top: 15%; left: -20%" class="col-md-6 container-login100-form-btn">
+				<button onclick="window.location.href = 'Travel.html';" type="button" class="login100-form-btn">Back</button>
+			</div>
+				<div style="top: 15%;" class="col-md-6 container-login100-form-btn">
+					<button onclick="window.location.href = 'SeatSelection.html';" type="button" class="login100-form-btn">Next</button>						
+				</div>
+
+			</form>
+				
+        
+			</div>
+		</div>
+	</div>
+
+	
+
+	 
+	<script src="../librabies/vendor/animsition/js/animsition.min.js"></script>
+	<script src="../librabies/vendor/bootstrap/js/popper.js"></script>
+	<script src="../librabies/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../librabies/vendor/select2/select2.min.js"></script>
+	<script src="../librabies/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../librabies/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="../librabies/vendor/countdowntime/countdowntime.js"></script>
+	<script src="../JS/main.js"></script> 
+
+	
+</body>
+</html>

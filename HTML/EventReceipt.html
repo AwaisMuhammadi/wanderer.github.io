@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="icon" type="image/png" href="img/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../librabies/vendor/daterangepicker/daterangepicker.css">
+
+
+	<link rel="stylesheet" type="text/css" href="../CSS/util.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+
+	
+	<link rel="icon" type="image/png" href="../Images/icon.png"/>
+	<title>Wanderer.com</title>
+
+</head>
+
+
+<body>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(../Images/payment.jpg);">
+					<span class="login100-form-title-1">
+						Receipt
+					</span>
+				</div>
+
+				<form class="login100-form validate-form">
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26">
+						<span style="left: 50px; top: 20px; font-size: 30px;" class="label-input100"><b>Customer</b></span>
+					</div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26"></div>
+					
+					<div style="position: relative; left: -50px; width: 100%;">
+						<br>
+						<div style="border-bottom: 0px; float: left;">
+							<p>Asim Khan</p>
+							<p>0311-1221231</p>
+							<p>17302-1223112-0</p>
+						</div>
+
+						<div style="border-bottom: 0px; float: right;">
+							<p>Ticket No: <b>1234</b></p>
+							<p id="dateissue">Date Issued: </p>
+						</div>
+					</div>
+
+					<div style="position: relative; left: -50px;" class="wrap-input100 wrapm m-b-26"></div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26">
+						<span style="top: 20px;" class="label-input100">Description</span>
+						<span class="focus-input100"></span>
+					</div>	
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26"></div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26">
+						<span class="label-input100">Event Date</span>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26"></div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26">
+						<span class="label-input100">Event Time</span>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26"></div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26">
+						<span class="label-input100">Price</span>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26"></div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26">
+						<span class="label-input100">Seat</span>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div style="border-bottom: 0px;" class="wrap-input100 wrapm m-b-26"></div>
+
+					<div style="position: relative; left: 40px; top: 20px;" class="col-md-6 container-login100-form-btn">
+						<input onclick="window.location.href = 'Thankyou.html';" type="submit" class="login100-form-btn" name="btn" value="Proceed">
+					</div>			
+
+							
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">		
+		var currentTime = new Date()
+		var month = currentTime.getMonth() + 1
+		var day = currentTime.getDate()
+		var year = currentTime.getFullYear()
+		var hours = currentTime.getHours()
+		var minutes = currentTime.getMinutes()
+		if (minutes < 10){
+		minutes = "0" + minutes
+		}
+		document.write(hours + ":" + minutes + " ")
+		if(hours > 11){
+		document.write("PM")
+		} else {
+		document.write("AM")
+		}
+		var d = (month + "/" + day + "/" + year + "-" + hours + ":" + minutes)
+		document.getElementById("dateissue").innerHTML = d				
+	</script>
+
+	<script src="../librabies/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../librabies/vendor/animsition/js/animsition.min.js"></script>
+	<script src="../librabies/vendor/bootstrap/js/popper.js"></script>
+	<script src="../librabies/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../librabies/vendor/select2/select2.min.js"></script>
+	<script src="../librabies/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../librabies/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="../librabies/vendor/countdowntime/countdowntime.js"></script>
+	<script src="../JS/main.js"></script>
+
+</body>
+</html>
